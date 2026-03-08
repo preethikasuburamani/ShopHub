@@ -1,0 +1,57 @@
+.header-box{
+    background-color:rgb(35, 35, 35);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+.logo a{
+    color:#8FC1DA;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+.nav-box li{
+    float: left;
+    padding: 20px;
+    list-style-type: none;
+    font-size: 25px;
+    
+}
+.nav-box a{
+    text-decoration: none;
+    color: #8FC1DA;
+}
+.nav-box li :hover{
+    color:white;
+}
+
+.account{
+    display: flex;
+
+}
+.account a{
+    padding: 10px;
+    padding-top: 25px;
+    font-size: 25px;
+    text-decoration: none;
+    color:#8FC1DA;
+}
+
+.siginlink:hover{
+    color:white;
+}
+.account h2{
+    padding: 5px;
+    font-size: 30px; 
+}
+
+.account h2 :hover{
+    color:white;
+}
+
+

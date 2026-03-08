@@ -1,0 +1,40 @@
+.footer{
+    padding-top: 20px;
+    background-color:rgb(35, 35, 35);
+    margin-top: 30px;
+    color:#8FC1DA;
+    font-size: 20px;
+    box-shadow: 2px 2px grey;
+}
+
+
+.footer-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media a{
+    color:#8FC1DA;
+}
+.social-media a :hover{
+    color: white;
+}
+.social-icon{
+    display: flex;
+    gap: 20px;
+}
+.copyrights{
+    text-align: center;
+    background-color: rgb(33, 33, 33);
+    padding: 20px;
+}
+
+.subscribe input{
+    border: 2px  solid black;
+    padding: 5px;
+}
+
+.subscribe button{
+    padding:5px ;
+    border: 2px  solid black;
+}

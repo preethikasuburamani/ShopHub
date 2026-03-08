@@ -1,0 +1,80 @@
+{
+"categories": [
+  {
+    "id": 1,
+    "name": "Electric",
+    "image": "https://picsum.photos/id/180/400/300" 
+  },
+  {
+    "id": 2,
+    "name": "Fashion",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Watch",
+    "image":"https://images.pexels.com/photos/13009536/pexels-photo-13009536.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "id": 4,
+    "name": "Beauty",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Men",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 6,
+    "name": "Women",
+    "image": "https://picsum.photos/id/1027/400/300"
+  }
+],
+
+  "products": [
+
+
+    { "id": 1, "title": "iPhone 14", "price": 999, "categoryId": 1, "stock": 15, "rating": 4.8, "image": "/public/images/iphone.png" },
+    { "id": 2, "title": "Samsung Galaxy S23", "price": 850, "categoryId": 1, "stock": 10, "rating": 4.6, "image": "/public/images/samsungS23.png" },
+    { "id": 3, "title": "Dell Laptop", "price": 1200, "categoryId": 1, "stock": 8, "rating": 4.5, "image": "/public/images/dell.png" },
+    { "id": 4, "title": "Bluetooth Speaker", "price": 120, "categoryId": 1, "stock": 30, "rating": 4.3, "image": "/public/images/bluetooth.png" },
+    { "id": 5, "title": "Wireless Headphones", "price": 150, "categoryId": 1, "stock": 20, "rating": 4.4, "image": "/public/images/wirelessHeadphone.png" },
+    { "id": 6, "title": "Mechanical Keyboard", "price": 110, "categoryId": 1, "stock": 18, "rating": 4.6, "image": "/public/images/keyboard.png" },
+
+
+    { "id": 7, "title": "Leather Jacket", "price": 150, "categoryId": 2, "stock": 12, "rating": 4.6, "image": "/public/images/fashion/leatherjacket.png" },
+    { "id": 8, "title": "Sneakers", "price": 90, "categoryId": 2, "stock": 25, "rating": 4.4, "image": "/public/images/fashion/snakers.png" },
+    { "id": 9, "title": "Handbag", "price": 110, "categoryId": 2, "stock": 15, "rating": 4.3, "image": "/public/images/fashion/handbag.png" },
+    { "id": 10, "title": "Sunglasses", "price": 60, "categoryId": 2, "stock": 35, "rating": 4.2, "image": "/public/images/fashion/sunglass.png" },
+    { "id": 11, "title": "Formal Shoes", "price": 120, "categoryId": 2, "stock": 10, "rating": 4.5, "image": "/public/images/fashion/formalshoes.png" },
+    
+    
+    { "id": 12, "title": "Rolex Submariner", "price": 8000, "categoryId": 3, "stock": 3, "rating": 4.9, "image": "/public/images/watches/rolex.png" },
+    { "id": 13, "title": "Apple Watch", "price": 450, "categoryId": 3, "stock": 14, "rating": 4.8, "image": "/public/images/watches/apple.png" },
+    { "id": 14, "title": "Samsung Smart Watch", "price": 350, "categoryId": 3, "stock": 10, "rating": 4.5, "image": "/public/images/watches/samsung.png" },
+    { "id": 15, "title": "Casio Digital Watch", "price": 75, "categoryId": 3, "stock": 28, "rating": 4.3, "image": "/public/images/watches/cioso.png" },
+    { "id": 16, "title": "Fossil Leather Watch", "price": 180, "categoryId": 3, "stock": 12, "rating": 4.4, "image": "/public/images/watches/fossil.png"},
+   
+   
+    { "id": 17, "title": "Lipstick Set", "price": 35, "categoryId": 4, "stock": 40, "rating": 4.4, "image": "/public/images/beatuy/lipstick.png" },
+    { "id": 18, "title": "Face Cream", "price": 50, "categoryId": 4, "stock": 30, "rating": 4.3, "image": "/public/images/beatuy/facecream.png" },
+    { "id": 19, "title": "Perfume", "price": 120, "categoryId": 4, "stock": 15, "rating": 4.6, "image": "/public/images/beatuy/perfum.png" },
+    { "id": 20, "title": "Makeup Kit", "price": 90, "categoryId": 4, "stock": 18, "rating": 4.5, "image": "/public/images/beatuy/makeupkit.png" },
+    { "id": 21, "title": "Highlighter", "price": 70, "categoryId": 4, "stock": 20, "rating": 4.2, "image": "/public/images/beatuy/highlighter.png" },
+   
+ 
+    { "id": 22, "title": "Men T-Shirt", "price": 30, "categoryId": 5, "stock": 40, "rating": 4.3, "image": "/public/images/mens/T-shirt.png" },
+    { "id": 23, "title": "Men Jeans", "price": 70, "categoryId": 5, "stock": 20, "rating": 4.4, "image": "/public/images/mens/jeans.png" },
+    { "id": 24, "title": "Men Jacket", "price": 120, "categoryId": 5, "stock": 15, "rating": 4.5, "image": "/public/images/mens/jacket.png" },
+    { "id": 25, "title": "Men Shorts", "price": 35, "categoryId": 5, "stock": 25, "rating": 4.2, "image": "/public/images/mens/shoes.png" },
+    { "id": 26, "title": "Men Formal Shirt", "price": 55, "categoryId": 5, "stock": 18, "rating": 4.3, "image": "/public/images/mens/shirt.png" },
+
+  
+    { "id": 27, "title": "Women Dress", "price": 85, "categoryId": 6, "stock": 20, "rating": 4.6, "image": "/public/images/womens/dress.png" },
+    { "id": 28, "title": "Women Top", "price": 40, "categoryId": 6, "stock": 35, "rating": 4.4, "image": "/public/images/womens/top.png" },
+    { "id": 29, "title": "Women Skirt", "price": 60, "categoryId": 6, "stock": 22, "rating": 4.3, "image": "/public/images/womens/shirt.png" },
+    { "id": 30, "title": "Women Jeans", "price": 75, "categoryId": 6, "stock": 18, "rating": 4.5, "image": "/public/images/womens/jeans.png" },
+    { "id": 31, "title": "Women Jacket", "price": 130, "categoryId": 6, "stock": 10, "rating": 4.7, "image": "/public/images/womens/jacket.png" }
+  ]
+}

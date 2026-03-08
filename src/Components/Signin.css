@@ -1,0 +1,59 @@
+/* Signin.css */
+
+.signin-box{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-filed{
+  width: 350px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-filed input{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-filed input:focus{
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74,144,226,0.3);
+}
+
+.signin-btn{
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #4a90e2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin-btn:hover{
+  background: #357abd;
+}
+.forget-password{
+    color:#4a90e2; 
+}  
+.other-sigin a{
+    text-decoration: none;
+    color: black;
+    font-size: 20PX;
+    text-align: center;
+}
