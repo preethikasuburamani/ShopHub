@@ -17,7 +17,7 @@ const Home= () => {
   
       async function fetchData(){
         try{
-        const res = await fetch("http://localhost:3001/categories")
+        const res = await fetch("https://my-json-server.typicode.com/preethikasuburamani/products-api/categories")
         const data = await res.json();
         setCategorie(data)
         }catch(err){

@@ -17,7 +17,6 @@
     "@mui/material": "^7.3.9",
     "@reduxjs/toolkit": "^2.11.2",
     "gotham-fonts": "^1.0.3",
-    "json-server": "^1.0.0-beta.12",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-hook-form": "^7.71.2",
