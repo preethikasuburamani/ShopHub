@@ -64,7 +64,7 @@ const Home= () => {
           <div className='banner-box'>
 
             <div className='img-box'>
-              <img src="/homepageImage/bags.png" alt="shopping bags " width="700px" />
+              <img  src={process.env.PUBLIC_URL + '/homepageImage/bags.png'} alt="shopping bags" width="700px"/>
             </div>
 
             <div className='content-box'>
