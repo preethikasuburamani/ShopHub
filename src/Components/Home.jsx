@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import { useNavigate } from 'react-router-dom'
 import {Link} from "react-router-dom"
-import bags from '../assets/image/bags.png';
+//import '../public/image/bags.png';
 import ProductList from './ProductList'
 
 const Home= () => {
@@ -65,8 +65,8 @@ const Home= () => {
           <div className='banner-box'>
 
             <div className='img-box'>
-              <img  src={bags} alt="shopping bags" width="700px"/>
-            </div>
+            <img src="/image/bags.png" alt="shopping bags" width="700px" />
+          </div>
 
             <div className='content-box'>
               <p>Upgrade your lifestyle with the latest modern trends at unbeatable prices.
