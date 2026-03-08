@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import { useNavigate } from 'react-router-dom'
 import {Link} from "react-router-dom"
+import bags from '../assets/images/bags.png';
 import ProductList from './ProductList'
 
 const Home= () => {
@@ -64,7 +65,7 @@ const Home= () => {
           <div className='banner-box'>
 
             <div className='img-box'>
-              <img  src='/homepageImage/bags.png' alt="shopping bags" width="700px"/>
+              <img  src={bags} alt="shopping bags" width="700px"/>
             </div>
 
             <div className='content-box'>
