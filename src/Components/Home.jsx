@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import { useNavigate } from 'react-router-dom'
 import {Link} from "react-router-dom"
-import bags from './assets/image/bags.png';
+import bags from '../assets/image/bags.png';
 import ProductList from './ProductList'
 
 const Home= () => {
