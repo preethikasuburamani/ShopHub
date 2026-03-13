@@ -65,7 +65,7 @@ const Home= () => {
           <div className='banner-box'>
 
             <div className='img-box'>
-            <img src="../assets/images/homepageImage/bags.png" alt="shopping bags" width="700px" />
+            <img src="/images/homepageImage/bags.png" alt="shopping bags" width="700px" />
           </div>
 
             <div className='content-box'>
