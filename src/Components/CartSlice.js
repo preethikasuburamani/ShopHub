@@ -8,10 +8,13 @@ const cartSlice =  createSlice({
     reducers :{
 
         addcart(state,action){
+            //puch product to cart
             state.push(action.payload)
 
             //local storage for cart
             localStorage.setItem("cart", JSON.stringify([...state]))
+
+           
         },
 
         removecart(state,action){
@@ -24,8 +27,11 @@ const cartSlice =  createSlice({
             return newcart  
         }
 
+        
     }
+    
 })
 
 export default cartSlice.reducer 
 export const {addcart,removecart} = cartSlice.actions
+export const totalCart = (state) => state.cart.length

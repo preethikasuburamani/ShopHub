@@ -12,6 +12,10 @@ const Cart = () => {
     //Selector to addcart
     let cartProduct = useSelector((state)=>{return state.cart})
 
+     //total price calculate
+    const TotalPrice = cartProduct.reduce((total,item)=>{return total+=item.price},0)
+    
+
     //useDispatch to removecart                             
     let dispatch = useDispatch()
 
@@ -42,10 +46,22 @@ const Cart = () => {
               
             </div>
           
+  
           </div>
 
         ))
-      } </div>
+      } 
+      
+      
+             {/* process to buy */}
+            <div className='buynow'>
+              <p className='price'>Total Price : {TotalPrice} </p>
+              <button className="cart-btn"> CHECK OUT</button>
+
+            </div>
+
+      </div>
+
 
       : <div className='emptycart'>
             <h1 className='message'>Your Cart is empty. Please add product to cart</h1>

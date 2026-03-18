@@ -4,11 +4,16 @@ import { FaCartShopping } from "react-icons/fa6";
 import { IoHeart } from "react-icons/io5";
 import "./Header.css"
 import {Link, useNavigate} from "react-router-dom"
+import { totalCart } from './CartSlice';
+import { useSelector } from 'react-redux';
 
 
 const Header = () => {
 
     let navigate = useNavigate()
+
+    //total cart length
+    const cartCount =useSelector(totalCart)
     
   return (
     
@@ -30,7 +35,13 @@ const Header = () => {
         <div className='account'>
             <Link to="/signin" className='siginlink'>Signin</Link>
             {/* <h2><a  href='/'> <CgProfile /> </a></h2> */}
-            <h2> <Link to ="/cart"><FaCartShopping /></Link> </h2>
+
+
+            <div className='cart-wrapper'>
+                <Link to="/cart"><FaCartShopping /></Link>
+                 {cartCount > 0 && <span className='cart-count'>{cartCount}</span>}
+                </div>
+
             <h2> <Link to ="/wishlist"> <IoHeart /> </Link> </h2>
         </div>
     </header>
