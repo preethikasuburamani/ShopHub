@@ -50,8 +50,8 @@
 .buynow {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
     background: #ffffff;
     border-radius: 12px;
     padding: 25px 30px;
