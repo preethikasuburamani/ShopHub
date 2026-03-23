@@ -25,7 +25,7 @@ const Products = () => {
     const Status = existProduct.some((item)=>item.id ===product.id)
 
     if(!Status){
-    dispatch( addcart(product) )
+    dispatch( addcart({...product, quantity: 1}) )
     }else{
       alert("Product is Already added")
     }
