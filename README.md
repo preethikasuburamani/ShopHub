@@ -1,18 +1,39 @@
 Live link: https://shop-mgvxidzgy-preethikas-projects-749b9ea0.vercel.app/
 
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ShopHub # React + Vite
+A simple e-commerce web application focused on delivering a smooth and user-friendly online shopping experience.
 
-Currently, two official plugins are available:
+## Project Description
+ShopHub is an online shopping platform where users can browse products, add items to their cart, and experience a clean and intuitive shopping flow. The project highlights core e-commerce functionality with a focus on usability and responsive design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## Live Link
+Live link: https://shop-mgvxidzgy-preethikas-projects-749b9ea0.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Screenshots
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/78436548-49c9-472d-936a-419dda5dac95" />
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+* HTML
+* CSS
+* JavaScript
+*React + Vite
+
+## Key Features
+* Product listing and browsing
+* Add to cart functionality
+* Responsive design
+* Clean and simple UI
+
+## Getting Started
+1. Clone the repository --bash--
+    git clone https://github.com/preethikasuburamani/ShopHub.git  
+2. Navigate to the project folder
+   cd ShopHub
+3. Open `index.html` in your browser
+   
+## Contact
+Feel free to reach out for feedback or collaboration
+LinkedIn: https://www.linkedin.com/in/preethika-subramani/
