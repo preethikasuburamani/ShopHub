@@ -1,40 +1,137 @@
-.footer{
-    padding-top: 20px;
-    background-color:rgb(35, 35, 35);
-    margin-top: 30px;
-    color:#8FC1DA;
-    font-size: 20px;
-    box-shadow: 2px 2px grey;
+/* Base Footer Styles */
+.footer {
+    padding-top: 40px;
+    background-color: rgb(35, 35, 35);
+    margin-top: 50px;
+    color: #8FC1DA;
+    font-size: 16px; /* Slightly smaller base font for better balance */
 }
 
-
-.footer-box{
+.footer-box {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Allows items to wrap on medium screens */
+    gap: 30px;
+    padding: 0 5% 40px 5%;
 }
 
-.social-media a{
-    color:#8FC1DA;
+/* Legal Links */
+.LegalTrust p {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.social-media a :hover{
+
+.LegalTrust p:hover {
     color: white;
 }
-.social-icon{
+
+/* Social Media */
+.social-media h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.social-icon {
     display: flex;
     gap: 20px;
 }
-.copyrights{
+
+.social-icon a {
+    color: #8FC1DA;
+    font-size: 24px; /* Larger icons */
+    transition: 0.3s;
+}
+
+.social-icon a:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Subscription Form */
+.subscribe {
+    max-width: 350px;
+}
+
+.subscribe h3 {
+    margin-bottom: 10px;
+}
+
+.subscribe p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.subscribe input {
+    border: none;
+    padding: 12px;
+    width: 200px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.subscribe button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8FC1DA;
+    color: #232323;
+    font-weight: bold;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: white;
+}
+
+/* Copyright Section */
+.copyrights {
     text-align: center;
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(25, 25, 25);
     padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid rgba(143, 193, 218, 0.1);
 }
 
-.subscribe input{
-    border: 2px  solid black;
-    padding: 5px;
+/* --- RESPONSIVE BREAKPOINT --- */
+
+@media (max-width: 768px) {
+    .footer-box {
+        flex-direction: column; /* Stacks sections vertically */
+        text-align: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .social-icon {
+        justify-content: center;
+    }
+
+    .subscribe {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .subscribe input {
+        width: 70%; /* Input takes more width on mobile */
+        border-radius: 4px; /* Stacked look if you prefer, or keep side-by-side */
+    }
+
+    .subscribe button {
+        width: 30%;
+        border-radius: 4px;
+        margin-top: 0;
+    }
 }
 
-.subscribe button{
-    padding:5px ;
-    border: 2px  solid black;
+@media (max-width: 480px) {
+    .subscribe input, 
+    .subscribe button {
+        width: 100%; /* Full width for very small screens */
+        border-radius: 4px;
+        display: block;
+        margin: 10px 0;
+    }
 }

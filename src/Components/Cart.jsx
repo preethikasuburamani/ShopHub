@@ -66,7 +66,7 @@ const Cart = () => {
              {/* process to buy */}
             <div className='buynow'>
               <p className='price'>Total Price : : £{TotalPrice.toFixed(2) }</p>
-              <button className="cart-btn"> CHECK OUT</button>
+              <button className="cart-btn checkOut"> CHECK OUT</button>
 
             </div>
 

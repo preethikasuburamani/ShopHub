@@ -1,87 +1,188 @@
-.main-cart{
-    min-height: 350px;
+/* Container Spacing */
+.main-cart {
+    margin-top: 100px; /* Space for the fixed header */
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 40vh;
+    overflow:hidden;
+
 }
 
-.cart-box{
- margin-top: 120px;
- margin-bottom: 20px;
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.emptycart{
-    height: 450px;
+/* Individual Product Box */
+.cart-box {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-.message{
-   color: black;
-   text-align: center;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    gap: 20px;
 }
 
+.cart-box img {
+    width: 150px; /* Slightly smaller for better fit */
+    height: 150px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Text Content */
+.cart-box .title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.cart-box .price {
+    color: #232323;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #8FC1DA;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.quantity-controls button:hover {
+    background-color: #8FC1DA;
+    color: white;
+}
+
+/* Action Buttons */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto; /* Pushes buttons to the far right on desktop */
+}
+
+.cart-btn {
+    background-color: #232323;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    background-color: #4aa3cf;
+}
+
+.wish-btn {
+    background: none;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wish-btn:hover {
+    background: #ff4d4d;
+    color: white;
+}
+
+/* Checkout Section */
 .buynow {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 2px solid #eee;
+    text-align: right;
+}
+.checkOut{
+    background-color: rgb(231, 181, 88);
+}
+/* .buynow {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
     border-radius: 12px;
+    border-top: 2px solid #eee;
     padding: 20px 30px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     margin-top: 20px;
     margin-bottom: 40px;
     position: sticky;
-    bottom: 20px;
+    bottom: 1px; 
+   
+} */
+
+.emptycart {
+    text-align: center;
+    padding-top: 50px;
 }
 
-.buynow .price {
-    font-size: 20px;
-    font-weight: 700;
-    color: #2d2d2d;
-    margin: 0;
+.message {
+    color: black;
+    font-size: 50px;
+    font-family: cursive;
 }
 
-.buynow {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 25px 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    margin-top: 20px;
-    margin-bottom: 40px;
-    gap: 15px;
+
+
+/* --- RESPONSIVE DESIGN --- */
+
+@media (max-width: 768px) {
+    .cart-box {
+        flex-direction: column; /* Stack image, text, and buttons */
+        text-align: center;
+    }
+
+    .cart-box img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .button-group {
+        margin-left: 0;
+        width: 100%;
+        flex-direction: row; /* Buttons side-by-side on mobile */
+        justify-content: center;
+    }
+
+    .cart-btn {
+        flex: 2;
+    }
+
+    .wish-btn {
+        flex: 1;
+    }
+
+    .buynow {
+        text-align: center;
+        position: sticky;
+        bottom: 0;
+        background: white;
+        box-shadow: 0 -5px 10px rgba(0,0,0,0.05);
+        width: 100%;
+        left: 0;
+    }
 }
 
-.buynow .price {
-    font-size: 22px;
-    font-weight: 700;
-    color: #2d2d2d;
-    margin: 0;
-}
-
-.buynow .cart-btn {
-    background-color: #ff6b35;
-    color: white;
-    border: none;
-    padding: 12px 60px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    letter-spacing: 1px;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.buynow .cart-btn:hover {
-    background-color: #e55a25;
-    transform: scale(1.05);
-}

@@ -24,11 +24,11 @@ const Header = () => {
         
         {/*Navigation*/}
         <div className='nav-box'>
-            <nav className='nav'> 
+            <ul className='nav'> 
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/Products">Products</Link></li>
                 <li><Link to="/contactus">ContactUs</Link></li>   
-            </nav>
+            </ul>
         </div>
 
 

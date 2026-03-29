@@ -2,6 +2,8 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { IoHeart } from "react-icons/io5";
 import { removeWishlist } from './WishlistSlice';
+import { addcart} from './CartSlice';
+
 
 const WishList = () => {
 
@@ -17,9 +19,21 @@ const WishList = () => {
     dispatch( removeWishlist(id))
   }
 
+    //useSelect to check not to add same product to cat
+      const existProduct = useSelector((state)=>{return state.cart})
+   //Addcart function
+     let AddCart = (product)=>{
+       const Status = existProduct.some((item)=>item.id ===product.id)
+   
+       if(!Status){
+       dispatch( addcart({...product, quantity: 1}) )
+       }else{
+         alert("Product is Already added")
+       }
+     }
   
     return (
-      <div>
+      <div className='main-cart'>
           {WishlistProducts.length !== 0 ?<div> 
           {
           WishlistProducts.map((product)=>(
@@ -32,7 +46,8 @@ const WishList = () => {
               <p className='price'>  PRICE : £{product.price}  </p>
               </div>
               <div className='button-group'>
-    
+
+                  <button className='cart-btn'    onClick={ ()=>{AddCart(product)} }>ADD TO CART</button>
                   <button className='wish-btn'  onClick={()=>{RemoveList(product.id)}}><IoHeart /></button>
                 
               </div>
