@@ -8,9 +8,6 @@ A simple e-commerce web application focused on delivering a smooth and user-frie
 ShopHub is an online shopping platform where users can browse products, add items to their cart, and experience a clean and intuitive shopping flow. The project highlights core e-commerce functionality with a focus on usability and responsive design.
 
 
-## Live Link
-Live link: https://shop-mgvxidzgy-preethikas-projects-749b9ea0.vercel.app/
-
 ## Screenshots
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/78436548-49c9-472d-936a-419dda5dac95" />
 
