@@ -28,7 +28,7 @@ ShopHub is an online shopping platform where users can browse products, add item
 1.Clone Project Folder
 
 ```bash
-git clone https://github.com/your-username/cdr-analytics-dashboard.git
+git clone https://github.com/your-username/cdr-shopHub.git
 ```
 2. Redirect to the folder
 ```bash
