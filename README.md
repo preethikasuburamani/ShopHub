@@ -1,4 +1,4 @@
-Live link: https://shop-mgvxidzgy-preethikas-projects-749b9ea0.vercel.app/
+Live link: https://shop-hub-lime.vercel.app/
 
 
 # ShopHub # React + Vite
