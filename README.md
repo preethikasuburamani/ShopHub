@@ -9,8 +9,7 @@ ShopHub is an online shopping platform where users can browse products, add item
 
 
 ## Screenshots
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/78436548-49c9-472d-936a-419dda5dac95" />
-
+<img width="1906" height="918" alt="Screenshot (380)" src="https://github.com/user-attachments/assets/597a9109-250f-4148-8135-c176eaf22783" />
 
 ## Tech Stack
 * HTML
@@ -24,12 +23,28 @@ ShopHub is an online shopping platform where users can browse products, add item
 * Responsive design
 * Clean and simple UI
 
-## Getting Started
-1. Clone the repository --bash--
-    git clone https://github.com/preethikasuburamani/ShopHub.git  
-2. Navigate to the project folder
-   cd ShopHub
-3. Open `index.html` in your browser
+## Installation Guide
+
+1.Clone Project Folder
+
+```bash
+git clone https://github.com/your-username/cdr-analytics-dashboard.git
+```
+2. Redirect to the folder
+```bash
+cd cdr-analytics-dashboard
+```
+
+3.Install npm liabrary
+```bash
+npm install
+```
+
+4.npm project
+```bash
+npm run dev
+```
+
    
 ## Contact
 Feel free to reach out for feedback or collaboration
