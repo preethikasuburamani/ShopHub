@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from "react-redux"
 import { IoHeart } from "react-icons/io5";
 import { removecart ,addQuantity,minusQuantity} from './CartSlice';
 import "./Cart.css"
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -37,6 +38,9 @@ const Cart = () => {
       dispatch(minusQuantity(id))
     }
 
+
+    //useNavigate for checkout 
+    const navigate = useNavigate()
   return (
     <div className='main-cart'>
         {cartProduct.length !== 0 ?<div> 
@@ -66,7 +70,7 @@ const Cart = () => {
              {/* process to buy */}
             <div className='buynow'>
               <p className='price'>Total Price : : £{TotalPrice.toFixed(2) }</p>
-              <button className="cart-btn checkOut"> CHECK OUT</button>
+              <button className="cart-btn checkOut"  onClick={() => navigate('/checkout')}> CHECK OUT</button>
 
             </div>
 

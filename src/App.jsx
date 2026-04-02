@@ -12,6 +12,7 @@ import Signin from './Components/Signin'
 import ContactUs from './Components/ContactUs'
 import Register from './Components/Register'
 import ForgetPassword from './Components/ForgetPassword'
+import CheckOut from './Components/CheckOut'
 
 
 
@@ -32,6 +33,7 @@ const App = () => {
           <Route path='/contactus' element={<ContactUs/>}/>   
           <Route path='/register' element={<Register/>}/>
           <Route path='/forgetPassword' element={<ForgetPassword/>}/>  
+          <Route path="/checkout" element ={<CheckOut/>}/>
         </Routes>
         <Footer/>
     </Router>
