@@ -95,7 +95,7 @@ const CheckOut = () => {
   if (cartProduct.length === 0) {
     return (
       <div className="emptycart">
-        <div className="co-empty-icon">🛒</div>
+        <div className="co-empty-icon"></div>
         <h1 className="message">Your Cart is empty. Please add product to cart</h1>
         <button className="cart-btn" onClick={() => navigate('/')}>Back to Shop</button>
       </div>
@@ -131,7 +131,7 @@ const CheckOut = () => {
   // ── ORDER SUMMARY (reused in sidebar) ──
   const OrderSummary = () => (
     <div className="co-summary">
-      <h3 className="co-summary-title">🛍 Order Summary</h3>
+      <h3 className="co-summary-title"> Order Summary</h3>
       {cartProduct.map(product => (
         <div key={product.id} className="co-summary-item">
           <div className="co-summary-img-wrap">
@@ -157,7 +157,7 @@ const CheckOut = () => {
       <div className="co-divider" />
       <div className="co-row co-grand-total"><span>Total</span><span>£{grandTotal}</span></div>
       {shipping > 0 && (
-        <p className="co-free-hint">🚚 Add £{(50 - TotalPrice).toFixed(2)} more for free shipping!</p>
+        <p className="co-free-hint">Add £{(50 - TotalPrice).toFixed(2)} more for free shipping!</p>
       )}
     </div>
   )
@@ -195,32 +195,30 @@ const CheckOut = () => {
       <div className="co-grid">
         <div className="co-left">
 
-          {/* ════════════════════════════
-              STEP 1 — DELIVERY FORM
-          ════════════════════════════ */}
+          {/* STEP 1 — DELIVERY FORM */}
           {step === 1 && (
             <form className="co-card" onSubmit={handleDeliverySubmit} noValidate>
               <h2 className="co-card-title">
-                <span className="co-card-icon">📦</span> Delivery Information
+                <span className="co-card-icon"></span> Delivery Information
               </h2>
 
               <fieldset className="co-fieldset">
                 <legend className="co-legend">Personal Details</legend>
                 <div className="co-fields">
                   <Field
-                    label="First Name" name="firstName" placeholder="Jane"
+                    label="First Name" name="firstName" placeholder="preethika"
                     half value={form.firstName} onChange={handleChange} error={errors.firstName}
                   />
                   <Field
-                    label="Last Name" name="lastName" placeholder="Smith"
+                    label="Last Name" name="lastName" placeholder="Subramani"
                     half value={form.lastName} onChange={handleChange} error={errors.lastName}
                   />
                   <Field
-                    label="Email Address" name="email" placeholder="jane@email.com"
+                    label="Email Address" name="email" placeholder="preethikasubramani@email.com"
                     type="email" value={form.email} onChange={handleChange} error={errors.email}
                   />
                   <Field
-                    label="Phone (optional)" name="phone" placeholder="+44 7700 900000"
+                    label="Phone (optional)" name="phone" placeholder="+44 7575121126"
                     type="tel" value={form.phone} onChange={handleChange} error={errors.phone}
                   />
                 </div>
@@ -230,15 +228,15 @@ const CheckOut = () => {
                 <legend className="co-legend">Delivery Address</legend>
                 <div className="co-fields">
                   <Field
-                    label="Street Address" name="address" placeholder="12 Oxford Street"
+                    label="Street Address" name="address" 
                     value={form.address} onChange={handleChange} error={errors.address}
                   />
                   <Field
-                    label="City" name="city" placeholder="London"
+                    label="City" name="city" 
                     half value={form.city} onChange={handleChange} error={errors.city}
                   />
                   <Field
-                    label="Postcode" name="postcode" placeholder="W1A 1AA"
+                    label="Postcode" name="postcode" 
                     half value={form.postcode} onChange={handleChange} error={errors.postcode}
                   />
                 </div>
@@ -250,13 +248,11 @@ const CheckOut = () => {
             </form>
           )}
 
-          {/* ════════════════════════════
-              STEP 2 — PAYMENT FORM
-          ════════════════════════════ */}
+          {/* STEP 2 — PAYMENT FORM */}
           {step === 2 && (
             <form className="co-card" onSubmit={handlePaymentSubmit} noValidate>
               <h2 className="co-card-title">
-                <span className="co-card-icon">💳</span> Payment Details
+                <span className="co-card-icon"></span> Payment Details
               </h2>
 
               <div className="co-card-badges">
@@ -269,7 +265,7 @@ const CheckOut = () => {
                 <legend className="co-legend">Card Information</legend>
                 <div className="co-fields">
                   <Field
-                    label="Name on Card" name="cardName" placeholder="Jane Smith"
+                    label="Name on Card" name="cardName" placeholder="Preethika Subramani"
                     value={form.cardName} onChange={handleChange} error={errors.cardName}
                   />
                   <Field
@@ -287,7 +283,7 @@ const CheckOut = () => {
                 </div>
               </fieldset>
 
-              <p className="co-secure-note">🔒 Your payment details are encrypted and secure.</p>
+              <p className="co-secure-note">Your payment details are encrypted and secure.</p>
 
               <div className="co-btn-row">
                 <button type="button" className="co-back-btn" onClick={GoBack}>← Back</button>
@@ -296,18 +292,16 @@ const CheckOut = () => {
             </form>
           )}
 
-          {/* ════════════════════════════
-              STEP 3 — REVIEW FORM
-          ════════════════════════════ */}
+          {/* STEP 3 — REVIEW FORM */}
           {step === 3 && (
             <form className="co-card" onSubmit={handlePlaceOrder}>
               <h2 className="co-card-title">
-                <span className="co-card-icon">✅</span> Review Your Order
+                <span className="co-card-icon"></span> Review Your Order
               </h2>
 
               <div className="co-review-block">
                 <div className="co-review-header">
-                  <span>📦 Delivery</span>
+                  <span>Delivery</span>
                   <button type="button" className="co-edit-btn" onClick={() => setStep(1)}>Edit</button>
                 </div>
                 <p className="co-review-text"><strong>{form.firstName} {form.lastName}</strong></p>
@@ -318,7 +312,7 @@ const CheckOut = () => {
 
               <div className="co-review-block">
                 <div className="co-review-header">
-                  <span>💳 Payment</span>
+                  <span>Payment</span>
                   <button type="button" className="co-edit-btn" onClick={() => setStep(2)}>Edit</button>
                 </div>
                 <p className="co-review-text"><strong>{form.cardName}</strong></p>
