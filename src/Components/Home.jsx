@@ -44,10 +44,8 @@ const Home= () => {
         
 
         {/*categorier content*/}
-         <h1 style={{fontFamily:'cursive'}}>CATEGORIES</h1>
-        <div className="categories-container">
-         
-                    
+         <h1 style={{fontFamily:'cursive'}}> CATEGORIES </h1>
+        <div className="categories-container">           
           {
             categorie.map((cat)=>(
               <div key = {cat.id}   className="category-card">
