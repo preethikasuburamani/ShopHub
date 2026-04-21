@@ -8,6 +8,9 @@ function useFetch(url){
     //Error State
     const[error,SetError] = useState("")
 
+    //loading
+    const[loading,setLoading] = useState(true)
+
 
     useEffect(()=>{
         const fetchdata = async ()=>{
@@ -19,13 +22,14 @@ function useFetch(url){
             SetError(err)
         }finally{
 
+            setLoading(false)
         }
         }
 
         fetchdata()
     },[])
 
-    return {products,error}
+    return {products,error,loading}
 }
 
 export default useFetch;

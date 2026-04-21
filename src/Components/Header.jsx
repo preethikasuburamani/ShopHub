@@ -32,10 +32,10 @@ const Header = () => {
         </div>
 
 
+        {/* signin,cart,whishlist */}
         <div className='account'>
             <Link to="/signin" className='siginlink'>Signin</Link>
             {/* <h2><a  href='/'> <CgProfile /> </a></h2> */}
-
 
             <div className='cart-wrapper'>
                 <Link to="/cart"><FaCartShopping /></Link>

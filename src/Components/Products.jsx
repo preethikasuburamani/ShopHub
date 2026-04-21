@@ -11,8 +11,8 @@ import { addWhishlist } from "./WishlistSlice"
 
 const Products = () => {
 
-  
-  const {products,error} = useFetch("https://my-json-server.typicode.com/preethikasuburamani/products-api/products")
+  //fetch data to integrate products in UI 
+  const {products,error,loading} = useFetch("https://my-json-server.typicode.com/preethikasuburamani/products-api/products")
 
   //useDispatch hook
   const dispatch = useDispatch()
@@ -23,6 +23,7 @@ const Products = () => {
   //Addcart function
   let AddCart = (product)=>{
     const Status = existProduct.some((item)=>item.id ===product.id)
+
 
     if(!Status){
     dispatch( addcart({...product, quantity: 1}) )
@@ -45,7 +46,7 @@ const Products = () => {
        } 
    }
 
- 
+ loading && <p>Loading ....</p>
   return (
     <div>
       

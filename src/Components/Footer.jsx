@@ -13,16 +13,16 @@ const Footer = () => {
     <div>
 
       <footer className='footer'>
-
+        {/* terms and conditions */}
         <div className='footer-box'>
-          <div className='LegalTrust'>
-            
+          <div className='LegalTrust'> 
             <p>Privacy Policy</p>
             <p>Terms & Conditions</p>
-            <p>Payment Methods</p>
-              
+            <p>Payment Methods</p>     
           </div>
 
+
+          {/* social media links */}
           <div className='social-media'>
             <h3>Contact us on</h3>
             <div className='social-icon'>
@@ -32,6 +32,7 @@ const Footer = () => {
             </div> 
           </div>
 
+          {/* subscribe for discount and updates */}
           <div className='subscribe'>
             <h3>Subscribe for Exclusive Deals</h3>
             <p>get update on new arrival, special discount and sesonal offer</p>
@@ -42,6 +43,7 @@ const Footer = () => {
 
         </div>
 
+        {/* copy rights */}
         <div className='copyrights'>
           <p>© 2026 SHOPHUB. All Rights Reserved.</p>
         </div>

@@ -34,7 +34,7 @@ const Home= () => {
   
 
      <div className='home-box'> 
-        
+        {/*Home Banner*/}
         <div className='banner-content'>
             <h1 className='top'>Shop Smarter</h1>  
             <h3>UPTO 50% DISCOUNT</h3>  
