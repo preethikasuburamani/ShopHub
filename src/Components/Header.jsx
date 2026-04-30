@@ -6,6 +6,7 @@ import "./Header.css"
 import {Link, useNavigate} from "react-router-dom"
 import { totalCart } from './CartSlice';
 import { useSelector } from 'react-redux';
+import ProductList from './ProductList'
 
 
 const Header = () => {
@@ -26,10 +27,24 @@ const Header = () => {
         <div className='nav-box'>
             <ul className='nav'> 
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/Products">Products</Link></li>
+                <li className='dropdown'><Link to="/Products">Products</Link>
+                
+                {/* Hover Navigation for products */}
+                    <ul class="dropdown-menu">
+                        <li onClick={()=>{navigate(`/productList/1`)}}>Electronics</li>
+                        <li onClick={()=>{navigate(`/productList/2`)}}>Fashion</li>
+                        <li onClick={()=>{navigate(`/productList/3`)}}>Watches</li>
+                        <li onClick={()=>{navigate(`/productList/4`)}}>Beauty</li>
+                        <li onClick={()=>{navigate(`/productList/5`)}}>Men</li>   
+                        <li onClick={()=>{navigate(`/productList/6`)}}>Women</li>             
+                    </ul>
+                </li>
                 <li><Link to="/contactus">ContactUs</Link></li>   
             </ul>
         </div>
+
+
+      
 
 
         {/* signin,cart,whishlist */}
